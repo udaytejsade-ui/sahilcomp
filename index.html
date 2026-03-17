@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" class="h-full">
  <head>
@@ -536,18 +535,102 @@
        </div>
       </div><!-- Motherboard -->
       <div class="cyber-card neon-border rounded-lg p-6">
-       <div class="flex items-center gap-3 mb-3">
-        <i data-lucide="circuit-board" style="width:28px;height:28px;color:var(--primary-color);"></i>
-        <h3 class="text-lg font-bold" style="font-family:'Orbitron',sans-serif;color:var(--primary-color);">Motherboard</h3>
+       <div class="cyber-svg-container mb-4" style="padding-top:50%;">
+        <svg viewbox="0 0 300 150">
+         <rect width="300" height="150" fill="#0d0d20" /> <!-- PCB base --> <rect x="15" y="15" width="270" height="120" rx="5" fill="none" stroke="#00f0ff" stroke-width="1.5" /> <!-- Circuit trace paths --> <g stroke="#00f0ff" stroke-width="0.4" opacity="0.25">
+          <path d="M30 35 L70 35 L70 70 L110 70" />
+          <path d="M150 25 L150 100" />
+          <path d="M200 40 L240 40 L240 95 L200 95" />
+          <path d="M50 110 L100 110 L100 130" />
+         </g> <!-- Trace glow effect --> <g stroke="#00f0ff" stroke-width="0.8" opacity="0.15">
+          <path d="M30 35 L70 35 L70 70 L110 70" />
+          <path d="M150 25 L150 100" />
+         </g> <!-- Capacitors and passives --> <g fill="none" stroke="#ff00aa" stroke-width="0.7" opacity="0.6">
+          <rect x="62" y="62" width="7" height="10" rx="1" />
+          <rect x="80" y="68" width="7" height="10" rx="1" />
+          <rect x="92" y="60" width="7" height="10" rx="1" />
+         </g> <!-- Capacitor dots --> <g fill="#ff00aa" opacity="0.4">
+          <circle cx="65.5" cy="62" r="1.5" />
+          <circle cx="83.5" cy="68" r="1.5" />
+          <circle cx="95.5" cy="60" r="1.5" />
+         </g> <!-- CPU Socket (main chip) --> <rect x="135" y="45" width="50" height="50" rx="3" fill="none" stroke="#00f0ff" stroke-width="2" /> <!-- Socket pins array --> <g fill="#ff00aa" opacity="0.5">
+          <circle cx="145" cy="55" r="1.5" />
+          <circle cx="155" cy="55" r="1.5" />
+          <circle cx="165" cy="55" r="1.5" />
+          <circle cx="175" cy="55" r="1.5" />
+          <circle cx="145" cy="90" r="1.5" />
+          <circle cx="155" cy="90" r="1.5" />
+          <circle cx="165" cy="90" r="1.5" />
+          <circle cx="175" cy="90" r="1.5" />
+         </g> <!-- Power connectors --> <g fill="none" stroke="#00f0ff" stroke-width="0.7" opacity="0.6">
+          <rect x="210" y="55" width="12" height="8" rx="1" />
+          <rect x="210" y="70" width="12" height="8" rx="1" />
+          <rect x="210" y="85" width="12" height="8" rx="1" />
+         </g> <!-- Connector indicators --> <g fill="#00f0ff" opacity="0.3">
+          <circle cx="216" cy="59" r="1" />
+          <circle cx="216" cy="74" r="1" />
+          <circle cx="216" cy="89" r="1" />
+         </g> <!-- RAM slots --> <g fill="none" stroke="#00f0ff" stroke-width="0.6" opacity="0.4">
+          <line x1="70" y1="30" x2="70" y2="25" stroke-width="1" />
+          <line x1="85" y1="30" x2="85" y2="25" stroke-width="1" />
+         </g> <!-- Data flow pulse animation --> <circle cx="150" cy="70" r="2" fill="#00f0ff" opacity="0.6">
+          <animate attributename="r" values="2;6;2" dur="2s" repeatcount="indefinite" />
+          <animate attributename="opacity" values="0.6;0;0.6" dur="2s" repeatcount="indefinite" />
+         </circle> <text x="150" y="140" fill="#00f0ff" font-size="10" font-family="'Share Tech Mono',monospace" text-anchor="middle" opacity="0.6">
+          ATX MOTHERBOARD
+         </text>
+        </svg>
        </div>
-       <p class="text-sm" style="color:rgba(224,224,240,0.6);">The central hub connecting all components. Modern boards feature PCIe 5.0, Wi-Fi 7, and sophisticated power delivery systems.</p>
+       <h3 class="text-lg font-bold" style="font-family:'Orbitron',sans-serif;color:var(--primary-color);">Motherboard</h3>
+       <p class="mt-2 text-sm" style="color:rgba(224,224,240,0.6);">The central hub connecting all components. Modern boards feature PCIe 5.0, Wi-Fi 7, and sophisticated power delivery systems.</p>
+       <div class="mt-3 flex gap-2 flex-wrap">
+        <span class="text-xs px-2 py-1 rounded" style="background:rgba(0,240,255,0.1);color:var(--primary-color);">ATX</span> <span class="text-xs px-2 py-1 rounded" style="background:rgba(255,0,170,0.1);color:var(--secondary-color);">PCIe 5.0</span>
+       </div>
       </div><!-- PSU -->
       <div class="cyber-card neon-border-pink rounded-lg p-6">
-       <div class="flex items-center gap-3 mb-3">
-        <i data-lucide="zap" style="width:28px;height:28px;color:var(--secondary-color);"></i>
-        <h3 class="text-lg font-bold" style="font-family:'Orbitron',sans-serif;color:var(--secondary-color);">Power Supply</h3>
+       <div class="cyber-svg-container mb-4" style="padding-top:50%;">
+        <svg viewbox="0 0 300 150">
+         <rect width="300" height="150" fill="#0d0d20" /> <!-- PSU case with beveled edges --> <rect x="35" y="28" width="230" height="95" rx="8" fill="none" stroke="#ff00aa" stroke-width="2" /> <!-- Inner frame --> <rect x="45" y="38" width="210" height="75" rx="4" fill="none" stroke="#ff00aa" stroke-width="0.8" opacity="0.4" /> <!-- Main cooling fan --> <circle cx="85" cy="75" r="26" fill="none" stroke="#ff00aa" stroke-width="1.5" opacity="0.7" /> <g style="transform-origin:85px 75px;animation:rotateSlow 3s linear infinite;" stroke="#ff00aa" stroke-width="0.9" opacity="0.6">
+          <line x1="85" y1="49" x2="85" y2="101" />
+          <line x1="59" y1="75" x2="111" y2="75" />
+          <line x1="65" y1="57" x2="105" y2="93" />
+          <line x1="65" y1="93" x2="105" y2="57" />
+         </g> <!-- Fan center hub --> <circle cx="85" cy="75" r="6" fill="none" stroke="#ff00aa" stroke-width="1" opacity="0.5" /> <circle cx="85" cy="75" r="2" fill="#ff00aa" opacity="0.7" /> <!-- Power indicator LED --> <circle cx="265" cy="48" r="9" fill="none" stroke="#ff00aa" stroke-width="1.5" /> <circle cx="265" cy="48" r="5" fill="#ff00aa" opacity="0.8">
+          <animate attributename="opacity" values="0.8;1;0.8" dur="1.5s" repeatcount="indefinite" />
+         </circle> <!-- Power output connectors on back --> <g fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.6">
+          <rect x="282" y="55" width="13" height="7" rx="1" />
+          <rect x="282" y="70" width="13" height="7" rx="1" />
+          <rect x="282" y="85" width="13" height="7" rx="1" />
+         </g> <!-- Connector pins --> <g fill="#00f0ff" opacity="0.4">
+          <circle cx="287" cy="58" r="0.8" />
+          <circle cx="292" cy="58" r="0.8" />
+          <circle cx="287" cy="73" r="0.8" />
+          <circle cx="292" cy="73" r="0.8" />
+          <circle cx="287" cy="88" r="0.8" />
+          <circle cx="292" cy="88" r="0.8" />
+         </g> <!-- Efficiency rating badge --> <g opacity="0.7">
+          <rect x="130" y="115" width="80" height="15" rx="3" fill="none" stroke="#ff00aa" stroke-width="0.8" />
+          <text x="170" y="124" fill="#ff00aa" font-size="8" font-family="'Share Tech Mono',monospace" text-anchor="middle" font-weight="bold">
+           80+ TITANIUM
+          </text>
+         </g> <!-- Power flow lines (animated) --> <g stroke="#00f0ff" stroke-width="0.5" opacity="0.4">
+          <line x1="55" y1="60" x2="75" y2="60">
+           <animate attributename="opacity" values="0.2;0.6;0.2" dur="1.5s" repeatcount="indefinite" />
+          </line>
+          <line x1="55" y1="75" x2="75" y2="75">
+           <animate attributename="opacity" values="0.2;0.6;0.2" dur="1.5s" repeatcount="indefinite" begin="0.5s" />
+          </line>
+          <line x1="55" y1="90" x2="75" y2="90">
+           <animate attributename="opacity" values="0.2;0.6;0.2" dur="1.5s" repeatcount="indefinite" begin="1s" />
+          </line>
+         </g>
+        </svg>
        </div>
-       <p class="text-sm" style="color:rgba(224,224,240,0.6);">Converts AC to DC power. 80+ Titanium-rated PSUs achieve 96% efficiency, delivering stable power to hungry components.</p>
+       <h3 class="text-lg font-bold" style="font-family:'Orbitron',sans-serif;color:var(--secondary-color);">Power Supply</h3>
+       <p class="mt-2 text-sm" style="color:rgba(224,224,240,0.6);">Converts AC to DC power. 80+ Titanium-rated PSUs achieve 96% efficiency, delivering stable power to hungry components.</p>
+       <div class="mt-3 flex gap-2 flex-wrap">
+        <span class="text-xs px-2 py-1 rounded" style="background:rgba(255,0,170,0.1);color:var(--secondary-color);">1000W+</span> <span class="text-xs px-2 py-1 rounded" style="background:rgba(0,240,255,0.1);color:var(--primary-color);">80+ Gold</span>
+       </div>
       </div>
      </div>
     </div>
@@ -1089,5 +1172,5 @@
     // Initialize Lucide icons
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dda808a95197a06',t:'MTc3MzczNDgyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ddd54bcf448b2bb',t:'MTc3Mzc2NDQ5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
